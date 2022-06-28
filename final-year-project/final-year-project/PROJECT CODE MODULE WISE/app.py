@@ -222,7 +222,7 @@ def user_register():
 
 # --------------------------------------rainfall_analysis_prediction----------------------------------------------------------------
 @app.route('/rainfall_analysis_predict', methods=['POST', 'GET'])
-def rap():
+def rainfall_analysis_predict():
     if request.method == 'POST':
         text = request.form['subdivision']
         return redirect(url_for('rainfall_graph', txt=text))
